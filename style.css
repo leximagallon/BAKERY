@@ -1,0 +1,101 @@
+* {
+  background-color: pink;
+}
+
+.brand {
+  font-size: 2rem;
+  font-family: serif;
+  font-variant: small-caps;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: block;
+}
+nav {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  padding: 40px;
+  background-color: lightsalmon;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 0; /* keep this so flex children can shrink properly */
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+aside {
+  width: 250px;
+  flex-shrink: 0;
+  background-color: lightgray;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+}
+li {
+  margin: 20px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: lightgray;
+}
+
+.sidebar-with-testimonials {
+  display: flex;
+  gap: 2rem; /* space between sidebar and testimonials */
+}
+
+aside {
+  width: 250px;
+  background-color: lightgray;
+}
+
+.testimonials {
+  flex-grow: 1;
+}
+
+.testimonial {
+  background-color: bisque;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+footer {
+  flex-shrink: 0;
+  background-color: lightsalmon;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+article {
+  flex-grow: 1;
+  min-width: 0;
+  background-color: bisque;
+  padding: 1rem;
+}
+
+header,
+footer {
+  flex-shrink: 0;
+}
